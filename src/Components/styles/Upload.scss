@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.Upload{
+    margin-top: 1rem;
+    color: $dark;
+    div{
+        text-align: center;
+        #icon{
+            padding-top: 1px;
+            color: $darkest;
+            font-size: 3rem;
+            &:active{
+                color: rgb(173, 111, 173);
+            }
+        }
+    }
+    form{
+        input{
+            display: none;
+        }
+    }
+}

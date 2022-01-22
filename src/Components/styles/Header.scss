@@ -1,0 +1,17 @@
+@import "../../global.scss";
+
+.Header{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    h1{
+        color: $darkest;
+        font-size: 3rem;
+        margin-bottom: 0.2rem;
+        letter-spacing: 1px;
+    }
+    h6{
+        color: $dark;
+        font-size: 1.5rem;
+    }
+}

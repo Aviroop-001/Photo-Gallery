@@ -1,0 +1,18 @@
+@import "../../global.scss";
+
+.zoomed-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(171, 144, 214,0.6);
+    img{
+        display: block;
+        height: 85%;
+        width: 75%;
+        margin: 4.5% 12.5% ;
+        box-shadow: $dark 3px 3px 4px;
+        border-radius: 1rem;
+    }
+}

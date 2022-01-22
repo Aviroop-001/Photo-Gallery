@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+
+import Title from './Components/scripts/Title';
+import Header from './Components/scripts/Header';
+import Upload from './Components/scripts/Upload';
+import Images from './Components/scripts/Images';
+import Focusedimage from './Components/scripts/Focusimage';
 
 function App() {
+
+  const [currImage, setcurrImage] = useState(null);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title />
+      <Header />
+      <Upload />
+      <Images setcurrImage={setcurrImage}/>
+      {currImage && <Focusedimage currImage={currImage} setcurrImage={setcurrImage} />}
     </div>
   );
 }

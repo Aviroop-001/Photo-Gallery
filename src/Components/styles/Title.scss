@@ -1,0 +1,11 @@
+@import '../../global.scss';
+
+.Title{
+    h3{
+        color: $dark;
+        font-size: 2rem;
+        margin-left: 10rem;
+        margin-top: 0.5rem;
+        opacity: 0.3;
+    }
+}

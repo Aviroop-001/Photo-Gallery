@@ -1,0 +1,12 @@
+@import '../../global.scss';
+
+.ProgressBar{
+    width: 80vw;
+    margin: 0.5rem auto;
+    height: 3px;
+    .bar{
+        height: 2px;
+        background-color: $dark;
+        border-radius: 1px;
+    }
+}
